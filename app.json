@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "RoomKeyPlus",
-    "slug": "RoomKeyPlus",
-    "scheme": "RoomKeyPlus",
+    "name": "ReactNativeAppTemplate",
+    "slug": "ReactNativeAppTemplate",
+    "scheme": "ReactNativeAppTemplate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

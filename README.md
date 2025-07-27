@@ -7,19 +7,23 @@ Use this template as a solid foundation to build scalable and maintainable React
 ```bash
 my-template/
 ├── app/
-│   ├── _layout.jsx              # base layout (tabs or stack)
-│   ├── index.jsx                # home screen (/)
-│   └── screen/                  # nested route folder (/screen)
-│       ├── index.jsx            # /screen
-│       ├── subroute/            # nested under /screen/subroute
-│       │   ├── [id].jsx         # dynamic route: /screen/subroute/123
-│       │   └── [...slug].jsx    # catch-all: /screen/subroute/a/b/c
+│   ├── _layout.jsx              # root layout (e.g., tabs or stack navigator)
+│   ├── index.jsx                # home screen (path: /)
+│   ├── profile/                 # profile route group
+│   │   ├── _layout.jsx          # profile nested stack layout
+│   │   ├── index.jsx            # profile main screen (/profile)
+│   │   └── dynamic/             # nested dynamic routes under /profile/dynamic
+│   │       ├── [id].jsx         # dynamic route: /profile/dynamic/123
+│   │       └── [...slug].jsx    # catch-all route: /profile/dynamic/a/b/c
+│   └── settings/                # settings route group
+│       ├── _layout.jsx          # settings nested stack layout
+│       └── index.jsx            # settings main screen (/settings)
 ├── assets/
-│   └── logo.png
+│   └── logo.png                 # static assets like images
 ├── package.json
 ├── app.json
 ├── babel.config.js
-├── template.config.js          # if exporting as a reusable template
+├── template.config.js          # optional, for reusable template config
 └── README.md
 ```
 
